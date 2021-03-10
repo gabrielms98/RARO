@@ -1,16 +1,22 @@
 <template>
-  <LandingPage />
+  <Header/>
+  <ThinkAbout/>
+  <Blog/>
 </template>
 
 <script>
-import LandingPage from './views/LandingPage.vue';
+import Header from './components/Header';
+import ThinkAbout from './components/ThinkAbout';
+import Blog from './components/Blog';
 
 export default {
+  name: 'App',
   components: {
-    LandingPage,
-  },
-  setup() {},
-};
+    Header,
+    ThinkAbout,
+    Blog
+  }
+}
 </script>
 
 <style lang="scss">
@@ -23,12 +29,12 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-
 #app {
   font-family: Poppins, sans-serif;
 }
-
 body {
+  width: 100vw;
+  height: 100vh;
   background: $white;
 }
 </style>
