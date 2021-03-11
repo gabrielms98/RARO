@@ -14,3 +14,11 @@ $ npm run serve
 * Desktop design: ✅
 * Mobile design: ✅
 * Tablet design: 🚫
+
+### Tempo gasto:
+* Layout: 4 horas
+* API: 30min
+* Versão mobile: 15min
+
+### Stack
+NodeJS com Vue 3 e Scss
