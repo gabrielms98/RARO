@@ -35,7 +35,7 @@ export default {
     fetch('https://jsonplaceholder.typicode.com/posts').then(async response => {
       const data = await response.json();
 
-      posts.value = data.slice(0, 10);
+      posts.value = data.slice(0, 6);
     })
 
     return {

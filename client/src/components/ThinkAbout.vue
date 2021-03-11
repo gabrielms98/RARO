@@ -20,6 +20,12 @@
     padding-right: 3rem;
 
     color: $dark-blue;
+
+    @include breakpoint-down(small) {
+      max-width: 100vw;
+      padding: 1rem;
+      margin: 1rem;
+    }
     
     &__header {
       color: $orange;

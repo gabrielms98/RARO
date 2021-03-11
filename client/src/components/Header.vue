@@ -73,6 +73,11 @@ export default {
     display: flex;
     justify-content: space-around;
 
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__background {
       position: absolute;
       width: 100vw;
@@ -83,6 +88,10 @@ export default {
       background-repeat: no-repeat;
       background-size: 100%;
       z-index: 1;
+
+      @include breakpoint-down(small) {
+        top: 0;
+      }
     }
 
     &__card {
@@ -98,12 +107,23 @@ export default {
       align-items: center;
 
       border: 2px solid $dark-blue;
-      // transform: translateY(25%);
+
+      @include breakpoint-down(small) {
+        height: 28rem;
+        margin-top: 8rem;
+      }
+      
 
       &__inverse {
         border: none;
         background: $dark-blue;
         transform: translateY(25%);
+
+        @include breakpoint-down(small) {
+          transform: translateY(0);
+          height: 38rem;
+          margin-top: 1rem;
+        }
       }
 
       &__main {
