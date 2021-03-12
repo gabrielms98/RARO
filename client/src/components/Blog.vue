@@ -1,7 +1,7 @@
 <template>
   <div class="blog">
     <div class="blog__header">
-      Blog
+      <span>Blog</span>
     </div>
     <div class="blog__container">
       <div class="blog__container__card" v-for="post in posts" :key="post.id">
@@ -59,8 +59,11 @@ export default {
       width: 40vw;
       margin-left: -10rem;
       display: flex;
-      justify-content: end;
       padding: 0 2rem;
+
+      & span {
+        margin-left: auto;
+      }
     }
 
     &__container {

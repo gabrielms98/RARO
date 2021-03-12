@@ -160,6 +160,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-self: flex-start;
+        width: 100%;
 
         &__label {
           color: $white;
